@@ -1,0 +1,32 @@
+.ProgressBar{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: center;
+    
+}
+.nameAndValue{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+
+.progressEmpty{
+    width: 100%;
+    height:15px;
+    display: flex;
+    align-items: start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius: 20px;
+}
+

@@ -1,0 +1,61 @@
+.MainContent{
+    text-align: center;
+    margin-bottom: 30px;
+    margin:15px;
+}
+
+.progressOverview{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.overallScore{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.performanceGaugeCovering{
+    position: absolute;
+    top:95px;
+}
+
+.performancePercentage{
+    position:absolute;
+    top:300px;
+    color: rgb(124, 58, 237);
+}
+
+.progressText{
+    margin-bottom: 100px;
+}
+
+.visualAnalysisCard{
+    background-color: #bd8afb;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin: 15px;
+    margin-bottom: 50px;
+}  
+
+.talkToExpert{
+    display:flex;
+    border:2px solid rgb(124, 58, 237);
+    background-color: #decbf7;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin:15px;
+    margin-top: 30px;
+    font-size: smaller;
+    font-weight: 600;
+}

@@ -1,0 +1,98 @@
+.PerformanceGauge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorCircle{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-image: conic-gradient(from 180deg,red 20%,orange 45%, yellow 75%, green);
+    position: relative;
+    /* background-color:; */
+}
+
+.guageScale{
+    width: 2px;
+    height: 200px;
+    background-color:white;
+    position: absolute;
+    left: 99px;
+}
+
+.coveringCircle{
+    width: 90%;
+    height: 95%;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    left: 5%;
+    top: 6%;
+}
+
+.centrePoint{
+    width: 15px;
+    height:15px;
+    position: absolute;
+    left:94px;
+    top: 94px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.needle{
+    width:10px;
+    height: 200px;
+    position: absolute;
+    left:96px;
+    top:1px;
+    background-color: black;
+    clip-path: polygon(48% 4%, 52% 4%, 100% 50%, 0% 50%);
+    /* animation: rotateNeedle 2s ease-out 1s; */
+}
+
+.marking0{
+    position:absolute;
+    left:52px;
+    top:167px;
+}
+
+.marking20{
+    position:absolute;
+    left:13px;
+    top:90px;
+}
+
+.marking40{
+    position:absolute;
+    left:52px;
+    top:20px;
+}
+
+.marking60{
+    position:absolute;
+    left:131px;
+    top:20px;
+}
+
+.marking80{
+    position:absolute;
+    left:171px;
+    top:90px;
+}
+
+.marking100{
+    position:absolute;
+    left:126px;
+    top:167px;
+}
+
+@keyframes rotateNeedle{
+    from{
+        transform: rotate(-150 deg);
+    }
+    to{
+        transform: rotate(--rotationAngle);
+    }
+}

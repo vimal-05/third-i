@@ -1,0 +1,62 @@
+.RatingCard{
+    box-sizing: border-box;
+    width: 212px;
+    height: 294px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
+    font-size: small;
+    margin:10px;
+    /* overflow: hidden; */
+}
+
+.cardVisuals{
+    position:relative;
+}
+
+.outerCircle{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:30px;
+    left:30px;
+}
+
+.innerCircle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardScore{
+    position: absolute;
+    top:85px;
+    left:49px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.cardLogo{
+    color: darkslategray;
+}
+
+.cardText{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: rgb(124, 58, 237);
+}

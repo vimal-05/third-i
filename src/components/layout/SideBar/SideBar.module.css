@@ -1,0 +1,86 @@
+.SideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;     */
+    width:100%;
+}
+
+.thirdILogo{
+    font-size: larger;
+    /* font-weight: 600; */
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.postAndAnalysis{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analysis{
+    width:80%;
+}
+
+.instaPost{
+    background-image: url("../../../../public/alandas.jpg.png");
+    background-size: cover;
+    background-position: center;
+    width:80%;
+    height: 410px;
+    border-radius: 10px;
+    margin: 35px 0px 20px 0px;
+}
+
+.tryAnother{
+    display:flex;
+    border:1px solid rgb(124, 58, 237);
+    background-color: #decbf7;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 80%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    /* margin:15px; */
+    margin-top: 100px;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+.signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(124, 58, 237);
+    border-radius: 10px;
+    margin-top: 35px;
+    width:80%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: smaller;
+    font-weight: 500;
+}
+.signUpTakeControl{
+    padding-bottom: 15px;
+}
+
+.logoAndSignUp{
+    border: 1px solid rgb(124, 58, 237);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+    background-color:#decbf7;
+    padding: 5px 0px;
+}
