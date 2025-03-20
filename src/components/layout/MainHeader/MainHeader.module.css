@@ -29,6 +29,12 @@
     color:rgb(124, 58, 237);
 }
 
+
+.shareOption:hover{
+    background-color: rgb(124, 58, 237);
+    color: white;
+}
+
 .creditScore{
     display: flex;
     align-items: center;

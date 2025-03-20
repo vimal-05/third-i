@@ -4,7 +4,7 @@ import {MainHeader} from './components/layout/MainHeader/MainHeader.jsx'
 import {MainContent} from './components/layout/MainContent/MainContent.jsx'
 import {SideBar} from './components/layout/SideBar/SideBar.jsx'
 function App() {
-  let data = {score:62};
+  let data = {score:20};
   return (
     <div className="App">
       

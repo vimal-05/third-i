@@ -8,7 +8,6 @@ export const ProgressBar=function({loadedColor,emptyColor,value,total,name}){
     
 
     useEffect(()=>{
-        // requestAnimationFrame(loadProgress);
         setProgress(width);
     },[width,progress]);
 

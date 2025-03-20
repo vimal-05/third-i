@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useEffect,useState} from "react";
 import { PerformanceGauge } from "../../widgets/PerformanceGauge/PerformanceGauge.jsx";
 import { CurvedBar } from "../../widgets/CurvedBar/CurvedBar.jsx";
 import {RatingCard} from '../../widgets/RatingCard/RatingCard.jsx'
-import styles from './MainContent.module.css'
-// import theEye from '../../../../public/theEye.png'
+import styles from './MainContent.module.css';
+
 export const MainContent= function({performanceData}){
     let cardData={
         score:9,
@@ -13,25 +13,17 @@ export const MainContent= function({performanceData}){
         icon:"person"
     };
     let [performancePercent,setPerformancePercent] = useState(0);
-    let n=0;
-    let factor = 90/60;
-    function increasePercent(){
-        if(n%factor===0){
-            if(performancePercent<performanceData.score){
-                setPerformancePercent(performancePercent+1);
-                n++;
-                requestAnimationFrame(increasePercent);
-            }
-            else if(performancePercent>performanceData.score){
-                setPerformancePercent(performancePercent-1);
-                n++;
-                requestAnimationFrame(increasePercent);
-            }
-        }
-        else{
-            n++;
-        }
-    }
+        let increasePercent=useCallback(()=>{
+
+                if(performancePercent<performanceData.score){
+                    setPerformancePercent(performancePercent+1);
+                    requestAnimationFrame(increasePercent);
+                }
+                else if(performancePercent>performanceData.score){
+                    setPerformancePercent(performancePercent-1);
+                    requestAnimationFrame(increasePercent);
+                }
+        },[performanceData.score,performancePercent]);
 
     useEffect(()=>{
         requestAnimationFrame(increasePercent);

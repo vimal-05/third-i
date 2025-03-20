@@ -87,12 +87,3 @@
     left:126px;
     top:167px;
 }
-
-@keyframes rotateNeedle{
-    from{
-        transform: rotate(-150 deg);
-    }
-    to{
-        transform: rotate(--rotationAngle);
-    }
-}

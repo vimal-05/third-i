@@ -8,13 +8,11 @@ export const MainHeader=function(){
                 <h3>AI Ad Analyser</h3>
             </div>
             <div className={styles.shareOptionAndCredit}>
-                <div>
-                    <div className={styles.shareOption}>                        
-                        <span class="material-symbols-outlined" style={{color:"rgb(124, 58, 237)",fontVariationSettings:`"FILL" 1, "wght" 600, "GRAD" 0,"opsz" 20`}}>
-                            share
-                        </span>
-                        <span>&nbsp;Share</span>
-                    </div>
+                <div className={styles.shareOption}>                        
+                    <span class="material-symbols-outlined"  style={{fontVariationSettings:`"FILL" 1, "wght" 600, "GRAD" 0,"opsz" 20`}}>
+                        share
+                    </span>
+                    <span>&nbsp;Share</span>
                 </div>
                 <div className={styles.creditScore}>
                     <div>
