@@ -1,0 +1,64 @@
+.postAndAnalysis{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analysis{
+    width:80%;
+}
+.imageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+}
+
+.instaPost{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 3px 0px 3px;
+    width: 97%;
+    /* aspect-ratio: 4/3; */
+}
+
+.instaBox{
+    background-color: white;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.topFrame{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding:15px;
+}
+.instaDpCircle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.instaAccountName{
+    font-weight: 500;
+}
+
+.bottomFrame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+}
+
+

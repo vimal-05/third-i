@@ -15,19 +15,19 @@ export const MainContent= function({performanceData}){
     let [performancePercent,setPerformancePercent] = useState(0);
         let increasePercent=useCallback(()=>{
 
-                if(performancePercent<performanceData.score){
+                if(performancePercent<performanceData.overall_score){
                     setPerformancePercent(performancePercent+1);
                     requestAnimationFrame(increasePercent);
                 }
-                else if(performancePercent>performanceData.score){
+                else if(performancePercent>performanceData.overall_score){
                     setPerformancePercent(performancePercent-1);
                     requestAnimationFrame(increasePercent);
                 }
-        },[performanceData.score,performancePercent]);
+        },[performanceData.overall_score,performancePercent]);
 
     useEffect(()=>{
         requestAnimationFrame(increasePercent);
-    },[performancePercent,performanceData.score,increasePercent]);
+    },[performancePercent,performanceData.overall_score,increasePercent]);
 
     return (
 
@@ -37,9 +37,9 @@ export const MainContent= function({performanceData}){
                 <span><h2> — Optimise for Peak Performance</h2></span>
             </div>
             <div className={styles.overallScore}>
-                <CurvedBar className={styles.performanceCurvedPath} loadedColor="rgb(124, 58, 237)" emptyColor="#d7bbf9" score={performanceData.score} total="100" radius="130"></CurvedBar>
+                <CurvedBar className={styles.performanceCurvedPath} loadedColor="rgb(124, 58, 237)" emptyColor="#d7bbf9" score={performanceData.overall_score} total="100" radius="130"></CurvedBar>
                 <div className={styles.performanceGaugeCovering}>
-                    <PerformanceGauge score={performanceData.score}></PerformanceGauge>
+                    <PerformanceGauge score={performanceData.overall_score}></PerformanceGauge>
                 </div>
                 <div className={styles.performancePercentage}>  
                     <h1>{performancePercent}%</h1>

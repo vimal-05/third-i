@@ -19,7 +19,7 @@ export const RatingCard = function({cardData}){
     }
     return (
         <div className={styles.RatingCard}>
-            <h3 style={{margin:"20px",color:"rgb(124, 58, 237)"}}>{cardData.heading}</h3>
+            <h4 style={{margin:"20px",color:"rgb(124, 58, 237)"}}>{cardData.heading}</h4>
             <div className={styles.cardVisuals}>
                 <CurvedBar radius="35" total="10" loadedColor={loadedColor} emptyColor={emptyColor} score={cardData.score}></CurvedBar>
                 <div className={styles.insideCurvedBar} >

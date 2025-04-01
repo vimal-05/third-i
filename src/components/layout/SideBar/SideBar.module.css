@@ -16,27 +16,6 @@
     align-items: center;
     margin-bottom: 50px;
 }
-.postAndAnalysis{
-    width: 90%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.analysis{
-    width:80%;
-}
-
-.instaPost{
-    background-image: url("../../../../public/alandas.jpg.png");
-    background-size: cover;
-    background-position: center;
-    width:80%;
-    height: 410px;
-    border-radius: 10px;
-    margin: 35px 0px 20px 0px;
-}
 
 .tryAnother{
     display:flex;
